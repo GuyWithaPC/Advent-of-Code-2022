@@ -1,3 +1,4 @@
 /target
 /.idea
 AOC2021.iml
+src/key.rs
