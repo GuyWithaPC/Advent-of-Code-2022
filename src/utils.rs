@@ -19,7 +19,7 @@ pub fn get_challenge_data(day: usize) -> String {
 
     } else {
         println!("cache not found! performing GET request...");
-        data = ureq::get(&format!("https://adventofcode.com/2021/day/{}/input", day))
+        data = ureq::get(&format!("https://adventofcode.com/2022/day/{}/input", day))
             .set("cookie", &format!("ru={}", SESSION_COOKIE))
             .call().expect("HTTP GET request failed")
             .into_string().expect("Failed to grab a string");
