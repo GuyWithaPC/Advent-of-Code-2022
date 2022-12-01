@@ -4,5 +4,6 @@ const SESSION_COOKIE: &str = "53616c7465645f5f550a96ca49a78e304d8621323b0ec4041c
 
 fn main() {
     let data = utils::get_challenge_data(6);
-    println!(data);
+    let data_chunks = data.split(",");
+    day6::solution1(data_chunks);
 }
