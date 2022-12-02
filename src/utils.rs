@@ -1,5 +1,5 @@
 
-use crate::SESSION_COOKIE;
+use crate::key::SESSION_COOKIE;
 use ureq;
 use std::fs::{self,File};
 use std::io::{Write,Read};
